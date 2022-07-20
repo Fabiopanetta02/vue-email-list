@@ -7,7 +7,7 @@ const root = new Vue({
     methods: {
     },
     mounted(){
-        for(let i = 0; i <= 10; i++ ){
+        for(let i = 1; i <= 10; i++ ){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((res) => {
                 const singleEmail = res.data.response;
                 this.randomEmail.push(singleEmail);
@@ -15,5 +15,4 @@ const root = new Vue({
             })
         }
     }
-
 }) 

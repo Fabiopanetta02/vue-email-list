@@ -33,7 +33,7 @@
 <body>
     <div class="container">
         <div id="root">
-            <ul>
+            <ul v-show="randomEmail.length == 10">
                 <li v-for="email in randomEmail">{{email}}</li>
             </ul>
         </div>
